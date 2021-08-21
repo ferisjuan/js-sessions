@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ferisjuan/js-sessions#readme",
   "dependencies": {
+    "@types/node": "^16.7.1",
     "axios": "^0.21.1",
     "concurrently": "^6.2.1",
     "typescript": "^4.3.5"
