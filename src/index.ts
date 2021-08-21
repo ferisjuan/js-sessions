@@ -5,8 +5,10 @@ import axios, {AxiosResponse} from "axios";
 
 import {baseUrl} from "./constants/url";
 
-axios.get(`${baseUrl}`)
-    .then((response: AxiosResponse<Record<string, string>>) => console.log(response.data['characteristic'])
-    )
+import {BASE_QUERY} from "./enums/base-query";
 
-console.log(baseUrl);
+const getBaseAPI = async (baseQueryName: BASE_QUERY) => {
+    const baseQueryUrl = await axios.get(`${baseUrl}`)
+
+    return baseQueryUrl.data[baseQueryName]
+}
