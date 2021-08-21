@@ -1,0 +1,27 @@
+{
+  "name": "js-sessions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:ts": "tsc -w",
+    "start:node": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferisjuan/js-sessions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferisjuan/js-sessions/issues"
+  },
+  "homepage": "https://github.com/ferisjuan/js-sessions#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.2.1",
+    "typescript": "^4.3.5"
+  }
+}
